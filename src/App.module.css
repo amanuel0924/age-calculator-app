@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(224, 221, 221);
+
+}
+
+label{
+  font-weight: 900;
+  font-size: 14px;
+  color: gray;
+}
+
+button{
+  background-color:hsl(259, 100%, 65%);
+  width: 60px;
+  height: 60px;
+  border-radius: 49%;
+  position: relative;
+  top: -25px;
+  align-self: center;
+  border: none;
+}
+button:hover{
+  background-color: black;
+  cursor: pointer;
+}
+img{
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.container{
+  background-color: white;
+  max-width: 600px;
+  max-height: 550px;
+  margin: 50px 10px auto;
+  border-radius: 20px 20px 100px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container{
+  display: flex;
+  margin: 0px 30px;
+  justify-content: space-between;
+  border-bottom: solid 2px rgb(199, 194, 194); 
+}
+
+.wrappers{
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+  text-align: left;
+  
+}
+.wrappers input{
+  color: blacks;
+  font-size: 22px;
+  font-weight: 900;
+  width: 93px;
+  height: 55px;
+  margin-top: 10px;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline-color: rgb(112, 111, 111);
+}
+.wrappers input::placeholder {
+  font-weight:800;
+  
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.error label{
+  color: red;
+  
+}
+.error input{
+  border-color: red;
+}
+.error p{
+  color: red;
+  font-size: 12px;
+}
+.results{
+  margin: 0px 40px 50px 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 1000;
+}
+.results p{
+  font-size: 45px;
+  font-style:italic;
+  line-height: 1.2;
+  
+}
+.results span{
+  color:hsl(259, 100%, 65%);
+  margin-right: 10px;
+  font-size: 50px;
+}
+@media screen and (min-width: 376px){
+  .container{
+    margin: 50px auto;
+  }
+  .input-container{
+    justify-content: start;
+    
+  }
+  .wrappers{
+    margin-right: 30px;
+  }
+  .results p{
+    font-size:3.5rem ;
+  }
+  .results span{
+    font-size:4rem ;
+  }
+  .wrappers input{
+    width: 100px;
+  }
+  
+  button{
+    align-self: end;
+    margin: 0px 30px;
+  }
+ 
+}
+
+
+
+
+
+
